@@ -3,6 +3,8 @@
 # TEAM LEADER:
 # implement this function so that it returns copy of string_arg reversed
 def reverseWord(string_arg):
+	string_arg = string_arg[::-1]
+	return string_arg	
 	pass
 
 # TEAM MEMBER:
