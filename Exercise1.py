@@ -10,9 +10,11 @@ def reverseWord(string_arg):
 # TEAM MEMBER:
 # implement this function so that it returns the frequency of query in string_arg
 def countFreq(string_arg, query):
+	counter = 0
 	for i in range(len(string_arg)):
 		if string_arg[i] == query:
-			print ("Found ", query, " at ", i)
+			counter += 1
+	return counter
 	pass
 
 def main():
