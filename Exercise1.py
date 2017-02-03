@@ -1,8 +1,7 @@
 # git-exercise-01.py
 
-print ("***This is an excercise that teaches you to collaborate through Github!***")
-print ("Team Members: \n 1)Rosie Vasquez\n 2)Henry Chung")
-print ("This is a simple program that allows you to reverse a word(s) and counts the frequecy of a letter in the word(s).")
+print ("\nCollaborators: \n 1)Rosie V.\n 2)Henry C.\n")
+print ("***THIS IS A SIMPLE PROGRAM THAT ALLOWS YOU TO REVERSE A WORD OR PHRASE AND COUNTS THE FREQUENCY OF A LETTER IN YOUR INPUT.***\n")
 
 # TEAM LEADER:
 # implement this function so that it returns copy of string_arg reversed
@@ -20,10 +19,11 @@ def countFreq(string_arg, query):
 	return counter
 
 def main():	
-	data = 'guidorossumwashere'
-	print ("YOUR WORD IS:", data)	
-	print ("REVERSED ==>", reverseWord(data))
-	print ("THE FREQUENCY OF s IN", data, "==>", countFreq(data, 's'))
-
+	data = raw_input('Enter your word(s) here: ')
+	data_l = raw_input('Enter a letter you would like to know the frequency of: ')
+	print '\nYou entered:', "'",data,"'"
+	print "\nHere is your word(s) reversed:","'",reverseWord(data),"'"	
+	print "\nThe frequency of", "'",data_l,"'", "in","'",data,"'", "is: ",countFreq(data_l, data)
+	print '\n\nThank you for using our program!\nHasta Luego(:\n'
 if __name__ == "__main__": 
 	main()
